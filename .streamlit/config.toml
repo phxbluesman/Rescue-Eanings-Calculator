@@ -1,0 +1,8 @@
+[general]
+titleIconEmoji = "💰"
+
+[logger]
+level = "info"
+
+[client]
+showErrorDetails = true
