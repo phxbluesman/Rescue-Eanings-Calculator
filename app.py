@@ -1,9 +1,18 @@
 import streamlit as st
-st.title("My Title", anchor=False)
-st.header("My Header", anchor=False)
-st.subheader("My Subheader", anchor=False)
+
 # Compact page setup
 st.set_page_config(page_title="Gig Calc", page_icon="💰", layout="centered")
+
+# Custom CSS to completely hide Streamlit footer, menu, and deploy button
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            .stDeployButton {display:none;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 st.title("💰 Gig Fuel & Earnings")
 st.caption("Quickly calculate true net pay on the go.")
