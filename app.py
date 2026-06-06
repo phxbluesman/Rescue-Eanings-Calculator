@@ -14,7 +14,7 @@ hide_streamlit_style = """
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-st.title("💰 Gig Fuel & Earnings")
+st.title("💰Earnings Estimator")
 st.caption("Quickly calculate true net pay on the go.")
 
 # Use a form to batch inputs and prevent laggy mobile reruns
