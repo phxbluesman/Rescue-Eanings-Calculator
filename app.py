@@ -8,15 +8,15 @@ st.caption("Quickly calculate true net pay on the go.")
 
 # Use a form to batch inputs and prevent laggy mobile reruns
 with st.form("calc_form"):
-    job_price = st.number_input("Job Offer Price ($)", min_value=0.0, value=150.0, step=5.0)
-    miles_to_job = st.number_input("One-Way Miles to Job", min_value=0.0, value=25.0, step=1.0)
+    job_price = st.number_input("Job Offer Price ($)", min_value=0.0, value=22.75, step=5.0)
+    miles_to_job = st.number_input("One-Way Miles to Job", min_value=0.0, value=10.0, step=1.0)
     
     # Put vehicle stats side-by-side to save vertical scrolling space
     col_v1, col_v2 = st.columns(2)
     with col_v1:
-        mpg = st.number_input("Vehicle MPG", min_value=0.1, value=18.0, step=0.5)
+        mpg = st.number_input("Vehicle MPG", min_value=0.1, value=22.0, step=0.5)
     with col_v2:
-        fuel_cost = st.number_input("Fuel $/Gal", min_value=0.0, value=3.75, step=0.05)
+        fuel_cost = st.number_input("Fuel $/Gal", min_value=0.0, value=4.39, step=0.05)
         
     submit = st.form_submit_button("Calculate Earnings", use_container_width=True)
 
