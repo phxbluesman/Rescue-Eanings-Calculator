@@ -1,5 +1,7 @@
 import streamlit as st
-
+st.title("My Title", anchor=False)
+st.header("My Header", anchor=False)
+st.subheader("My Subheader", anchor=False)
 # Compact page setup
 st.set_page_config(page_title="Gig Calc", page_icon="💰", layout="centered")
 
